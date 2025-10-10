@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marks Commercial Services LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon bg-primary text-white fw-bold me-2">MCS</div>
+      <span class="fw-semibold text-dark">Marks Commercial Services LLC</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Services Section -->
+  <section class="services-section container my-5 py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Our Services</h2>
+      <p class="text-muted">Professional repair and maintenance for all your commercial kitchen equipment needs.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+        <div class="service-card card border-0 shadow-sm h-100 text-center p-4">
+          <img src="img/service1.jpg" class="card-img-top rounded mb-3" alt="Hot Equipment Repair" />
+          <h5 class="fw-bold">Hot Equipment Repair</h5>
+          <p class="text-muted">
+            We provide quick and expert repair for ovens, fryers, ranges, and almost all cooking equipment!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <div class="service-card card border-0 shadow-sm h-100 text-center p-4">
+          <div class="sticker">Coming Soon</div>
+          <img src="img/service2.jpg" class="card-img-top rounded mb-3" alt="Refrigeration Systems" />
+          <h5 class="fw-bold">Refrigeration Systems</h5>
+          <p class="text-muted">
+            In the near future we plan to include service for reach-ins, undercounters, prep tables, and small walk-in coolers!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="service-card card border-0 shadow-sm h-100 text-center p-4">
+          <img src="img/service3.png" class="card-img-top rounded mb-3" alt="Preventive Maintenance" />
+          <h5 class="fw-bold">Preventive Maintenance</h5>
+          <p class="text-muted">
+            Regular service plans to prevent costly breakdowns and ensure your kitchen stays efficient and compliant.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+     <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <div class="logo-icon">MCS</div>
+          <span>Marks Commercial Services LLC</span>
+        </div>
+
+        <p>Reliable repair and maintenance for commercial food equipment across Arkansas</p>
+
+        <div class="copyright mt-3">
+      &copy; <span id="year"></span> Marks Commercial Services LLC. All rights reserved.
+    </div>
+
+      </div>
+    </footer>
+
+    <script>
+  // Auto-update year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+<!-- Bootstrap JS (Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Animate on scroll -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+  });
+  </script>
+
+<!-- Custom JS -->
+  <script src="main.js"></script>
+
+
+  </body>

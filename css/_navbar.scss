@@ -1,0 +1,48 @@
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  .navbar-brand {
+    color: $text-color;
+    font-weight: 600;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+
+  .nav-link {
+    color: $muted-text;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+
+    &.active,
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: $primary;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: darken($primary, 10%);
+  }
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}

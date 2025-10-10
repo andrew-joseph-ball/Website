@@ -1,0 +1,67 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "hero";
+@import "about";
+@import "services";
+@import "footer";
+@import "navbar";
+@import "animations";
+
+body {
+  font-family: $font-family-base;
+  background-color: $background;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #212529;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.card {
+  background-color: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  }
+}
+
+.btn {
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: darken($primary, 8%);
+    transform: translateY(-2px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-header {
+  background: linear-gradient(90deg, rgba(13,110,253,0.1), rgba(255,255,255,1));
+}
+
+.section-divider {
+  height: 1px;
+  background-color: $border-color;
+  margin: 3rem 0;
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}

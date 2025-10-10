@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MCS | About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon bg-primary text-white fw-bold me-2">MCS</div>
+      <span class="fw-semibold text-dark">Marks Commercial Services LLC</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+    </nav>
+
+      <!-- About Section -->
+  <section class="about-section container my-3 py-4">
+    <div class="row align-items-start g-5">
+      <!-- Profile -->
+      <div class="col-lg-4 text-center" data-aos="fade-right">
+        <div class="profile-card p-4 shadow-sm bg-white rounded">
+          <div class="profile-img-container">
+          <img src="img/pops.jpg" alt="Owner Profile" class="profile-img" />
+          </div>
+          <h3 class="fw-bold mb-1">Mark Ball</h3>
+          <p class="text-muted mb-2">Owner & Lead Technician</p>
+          <p class="small text-secondary">
+            With over 30 years of experience in commercial kitchen service, I take pride in providing honest, high-quality support to local businesses across Arkansas.
+        </p>
+          </p>
+        </div>
+      </div>
+
+      <!-- About Text -->
+      <div class="col-lg-8">
+        <div class="about-card card border-0 shadow-sm mb-4 p-3 bg-white" data-aos="fade-up">
+          <h4 class="fw-semibold mb-2 text-primary">Our Commitment</h4>
+          <p>
+            Our mission is simple: to provide quality service with a personal touch. As a “Mom & Pop” style service company, we believe in treating our customers like partners, not just transactions. We understand the importance of balancing fair pricing with excellent workmanship, and we strive to make every customer feel appreciated for choosing us. We are committed to being different from the corporate service providers who treat their customers as an afterthought. For us, it’s not about making a quick profit—it’s about earning long-term trust and delivering dependable service that keeps your kitchen running smoothly.
+          </p>
+        </div>
+
+        <div class="about-card card border-0 shadow-sm p-4 bg-white" data-aos="fade-up" data-aos-delay="150">
+          <h4 class="fw-semibold mb-2 text-primary">About Mark</h4>
+          <p>
+            I began my career in service work back in 1989, working alongside my father in his McDonald’s franchise. From there, I went on to work with Bromley Parts and Service, gaining over 28 years of hands-on experience in the commercial foodservice industry. Over the years, I’ve earned my CFESA Master Technician certification and have had the opportunity to work in countless kitchens across central Arkansas—and even across all four corners of the state. With decades of experience, I’ve come to value more than just fixing equipment. I believe in building strong relationships with my customers, providing reliable service, and ensuring every job is done with fairness, honesty, and professionalism.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+     <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <div class="logo-icon">MCS</div>
+          <span>Marks Commercial Services LLC</span>
+        </div>
+
+        <p>Reliable repair and maintenance for commercial food equipment across Arkansas</p>
+
+        <div class="copyright mt-3 mb-3">
+      &copy; <span id="year"></span> Marks Commercial Services LLC. All rights reserved.
+    </div>
+
+      </div>
+    </footer>
+
+    <script>
+  // Auto-update year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+<!-- Bootstrap JS (Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Animate on scroll -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+  });
+  </script>
+
+<!-- Custom JS -->
+  <script src="main.js"></script>
+  </body>
