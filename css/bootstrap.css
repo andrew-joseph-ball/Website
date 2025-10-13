@@ -12193,4 +12193,13 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
+.company-name {
+  display: inline;
+}
+@media (max-width: 768px) {
+  .company-name {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

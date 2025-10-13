@@ -65,3 +65,11 @@ html {
 .navbar-collapse {
   transition: all 0.3s ease-in-out;
 }
+
+.company-name{
+  display: inline;
+
+  @media(max-width:768px){
+    display:none;
+  }
+}
